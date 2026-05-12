@@ -1,0 +1,208 @@
+<html>
+<head>
+    <link rel="icon"
+        href="https://cdn-icons-png.flaticon.com/512/857/857455.png"
+        type="image/png">
+
+    <title>Sports Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0fff4;
+        }
+
+        header {
+            background-color: #2f855a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #48bb78;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        section {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #c6f6d5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2f855a;
+        }
+
+        footer {
+            background-color: #2f855a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Sports Registration Portal</h1>
+        <p>Join our sports community today!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Register</a>
+        <a href="#">Sports</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Registration Section -->
+        <section>
+
+            <article>
+                <h2>Registration Form</h2>
+                <p>Fill out the form below to register.</p>
+
+                    <label>Full Name</label>
+                    <input type="text" name="fullname" placeholder="Enter full name" required>
+
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Enter email" required>
+                    
+                    <label>Password</label>
+                    <input type="password" name="password" pattern=".{8,}" title="Password must contain at least 8 characters"
+                        placeholder="Enter password" required>
+
+                    <label>Date of Birth</label>
+                    <input type="date" name="dob" required>
+
+                    <label>Gender</label>
+
+                    <input type="radio" name="gender" value="Male" required> Male
+
+                    <input type="radio" name="gender" value="Female"> Female
+
+                    <label>Interested Sports</label>
+
+                    <input type="checkbox" name="sports" value="Cricket"> Cricket
+
+                    <input type="checkbox" name="sports" value="Volleyball"> Volleyball
+
+                    <input type="checkbox" name="sports" value="Badminton"> Badminton
+
+                    <input type="checkbox" name="sports" value="Basketball"> Basketball
+
+                    <input type="checkbox" name="sports" value="Tennis"> Tennis
+
+                    <input type="checkbox" name="sports" value="Football"> Football
+
+                    <!-- Experience -->
+                    <label>Sports Experience</label>
+
+                    <select name="experience" required>
+                        <option value="">--Select--</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+
+                    <!-- Message -->
+                    <label>Why do you want to join?</label>
+
+                    <textarea name="message" rows="4" placeholder="Write here..."></textarea>
+
+                    <button type="submit">Register Now</button>
+
+                </form>
+            </article>
+
+        </section>
+
+        <aside>
+
+            <h3>Upcoming Events</h3>
+
+            <ul>
+                <li>Cricket Tournament - June 10</li>
+                <li>Football League - July 5</li>
+                <li>Badminton Championship - August 15</li>
+            </ul>
+
+            <h3>Benefits</h3>
+
+            <p>
+                ~> Professional Coaching <br>
+                ~> Team Competitions <br>
+                ~> Fitness Training <br>
+                ~> Networking Opportunities
+            </p>
+
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sports Registration Portal</p>
+    </footer>
+</body>
+</html>
