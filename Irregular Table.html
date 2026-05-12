@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Irregular Table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+            margin: 20px auto;
+        }
+        td{
+            border: 2px solid black;
+            padding: 7px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <!-- Row 1 -->
+    <tr>
+        <td colspan="2">A</td>
+        <td colspan="5">B</td>
+    </tr>
+
+    <!-- Row 2 -->
+    <tr>
+        <td>C</td>
+        <td>D</td>
+        <td>E</td>
+        <td style="text-align: left;">F</td>
+        <td style="text-align: left;">G</td>
+        <td style="text-align: left;">H</td>
+        <td rowspan="3" style="vertical-align: top;">J</td>
+    </tr>
+
+    <!-- Row 3 -->
+    <tr>
+        <td rowspan="2" style="vertical-align: top;">K</td>
+        <td>M</td>
+        <td colspan="2">N</td>
+        <td colspan="2" style="text-align: left;">I</td>
+    </tr>
+
+    <!-- Row 4 -->
+    <tr>
+        <td>L</td>
+        <td>P</td>
+        <td>O</td>
+        <td>I</td>
+        <td>H</td>
+    </tr>
+</table>
+
+</body>
+</html>
